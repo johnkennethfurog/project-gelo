@@ -1,14 +1,17 @@
-import SnowwyBackground from "./components/snowwy-background";
-import Form from "./components/form";
-import SnowwyVillage from "./components/snowwy-village";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import Members from "./screens/members";
+import Admin from "./screens/admin";
 
 function App() {
   return (
-    <SnowwyBackground>
-      <Form email="juan@gmail.com" />
-    </SnowwyBackground>
+    <Router>
+      <Routes>
+        <Route path="/members" element={<Members />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </Router>
   );
 }
 

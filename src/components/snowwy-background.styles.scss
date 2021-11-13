@@ -107,9 +107,10 @@ $s3: "";
 
 .snowwy-village {
   background-image: url("../assets/snowwy-village.png");
+
   height: 100%;
   width: 100%;
   background-position: left bottom; /*Positioning*/
   background-repeat: no-repeat; /*Prevent showing multiple background images*/
-  background-size: contain;
+  background-size: cover;
 }
